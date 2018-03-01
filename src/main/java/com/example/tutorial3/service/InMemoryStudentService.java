@@ -24,7 +24,8 @@ public class InMemoryStudentService implements StudentService{
 	//Latihan 
 	@Override
 	public void deleteStudent(String npm) {
-		//Method ini menerima NPM mahasiswa dan mengembalikan object Student dengan NPM tersebut. Return null jika tidak ditemukan
+		//Method ini menerima NPM mahasiswa dan mengembalikan object Student 
+		//dengan NPM tersebut.
 		for (int i=0; i<studentList.size(); i++) {
 			if (studentList.get(i).getNpm().equals(npm)) {
 				studentList.remove(i);
